@@ -1,4 +1,9 @@
-
+# Finds the minimum sequence of operations to reach a number `n` starting from 1.
+#
+# The function computes the sequence of operations required to reach the number `n` using the minimum number of steps.
+# The allowed operations are adding 1, multiplying by 2, and multiplying by 3.
+# The function uses dynamic programming to build up the solution from smaller subproblems.
+#
 def minimum_operations(n)
   answer = Array.new(n + 1, [])
   answer[0] = []

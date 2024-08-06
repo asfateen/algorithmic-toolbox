@@ -1,3 +1,8 @@
+# Calculates the minimum number of refills required to travel a distance with a given range and stops.
+#
+# This function determines the minimum number of refills needed to travel a distance `d` with a vehicle
+# that has a maximum range `m` between refills. It uses a list of available stops to decide where to refill.
+#
 def min_refills(d, m, stops)
   return 0 if d <= m
 

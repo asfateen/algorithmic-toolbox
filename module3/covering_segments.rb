@@ -1,6 +1,16 @@
-
+# Represents a segment with a start and end point.
+#
 Segment = Struct.new("Segment", :start, :end)
 
+# Determines the optimal points that cover all given segments.
+#
+# This function computes the minimum number of points required to cover all the given segments.
+# It returns these points using a greedy algorithm approach
+#
+# @example
+#   segments = [Segment.new(1, 3), Segment.new(2, 5), Segment.new(4, 6)]
+#   optimal_points(segments) # => [3, 6]
+#
 def optimal_points(segments)
   points = []
   return points if segments.empty?

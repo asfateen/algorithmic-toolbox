@@ -1,10 +1,18 @@
-
+# Defines a segment with start and end points.
+#
 Segment = Struct.new("Segment", :a, :b) do
+# Checks if the given point is within the segment.
+#
   def contains?(point)
     a <= point and point <= b
   end
 end
-
+# Counts the number of segments that contain each of the given points.
+#
+# The algorithm uses an event-based approach where segments' start and end points are treated as events,
+# and each point is counted based on the number of active segments at that point.
+# (Organizing a lottery)
+#
 def fast_count_segments(segments, points)
   count = Array.new(points.size, 0)
   point_map = Hash.new { |h, k| h[k] = [] }
@@ -46,6 +54,8 @@ def fast_count_segments(segments, points)
   count
 end
 
+# Naive approach to improve upon
+#
 def naive_count_segments(segments, points)
   points.map { |point| segments.count { |s| s.contains?(point) } }
 end

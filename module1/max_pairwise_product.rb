@@ -1,5 +1,5 @@
 
-
+# Calculates the maximum pairwise product of an array.
 def max_pairwise_product(a)
   max1 = a.max
   a.delete_at(a.index(max1))

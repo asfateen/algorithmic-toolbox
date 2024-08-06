@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>class Object - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+  var index_rel_prefix = "./";
+</script>
+
+<script src="./js/navigation.js" defer></script>
+<script src="./js/search.js" defer></script>
+<script src="./js/search_index.js" defer></script>
+<script src="./js/searcher.js" defer></script>
+<script src="./js/darkfish.js" defer></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+<body id="top" role="document" class="class">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search (/) for a class, method, ..." spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+<div id="parent-class-section" class="nav-section">
+  <h3>Parent</h3>
+
+  <p class="link">BasicObject
+</div>
+
+    
+    
+    
+<!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    <li ><a href="#method-i-best_item">#best_item</a>
+    <li ><a href="#method-i-binary_search">#binary_search</a>
+    <li ><a href="#method-i-binary_search_with_duplicates">#binary_search_with_duplicates</a>
+    <li ><a href="#method-i-calc_fib">#calc_fib</a>
+    <li ><a href="#method-i-change">#change</a>
+    <li ><a href="#method-i-copy">#copy</a>
+    <li ><a href="#method-i-count_occurrences">#count_occurrences</a>
+    <li ><a href="#method-i-edit_distance">#edit_distance</a>
+    <li ><a href="#method-i-euclidean_distance">#euclidean_distance</a>
+    <li ><a href="#method-i-evaluate">#evaluate</a>
+    <li ><a href="#method-i-fast_count_segments">#fast_count_segments</a>
+    <li ><a href="#method-i-fib_huge">#fib_huge</a>
+    <li ><a href="#method-i-fib_last_digit">#fib_last_digit</a>
+    <li ><a href="#method-i-fib_last_digit_of_sum">#fib_last_digit_of_sum</a>
+    <li ><a href="#method-i-fib_partial_sum">#fib_partial_sum</a>
+    <li ><a href="#method-i-fib_sum_of_squares">#fib_sum_of_squares</a>
+    <li ><a href="#method-i-find_candidate">#find_candidate</a>
+    <li ><a href="#method-i-gcd">#gcd</a>
+    <li ><a href="#method-i-get_change">#get_change</a>
+    <li ><a href="#method-i-get_majority_element">#get_majority_element</a>
+    <li ><a href="#method-i-get_maximum_value">#get_maximum_value</a>
+    <li ><a href="#method-i-get_number_of_inversions">#get_number_of_inversions</a>
+    <li ><a href="#method-i-get_optimal_value">#get_optimal_value</a>
+    <li ><a href="#method-i-largest_number">#largest_number</a>
+    <li ><a href="#method-i-lcm">#lcm</a>
+    <li ><a href="#method-i-lcs3">#lcs3</a>
+    <li ><a href="#method-i-longest_common_subsequence">#longest_common_subsequence</a>
+    <li ><a href="#method-i-max">#max</a>
+    <li ><a href="#method-i-max_dot_product">#max_dot_product</a>
+    <li ><a href="#method-i-max_pairwise_product">#max_pairwise_product</a>
+    <li ><a href="#method-i-merge_and_count">#merge_and_count</a>
+    <li ><a href="#method-i-min">#min</a>
+    <li ><a href="#method-i-min_and_max">#min_and_max</a>
+    <li ><a href="#method-i-min_refills">#min_refills</a>
+    <li ><a href="#method-i-minimum_distance">#minimum_distance</a>
+    <li ><a href="#method-i-minimum_operations">#minimum_operations</a>
+    <li ><a href="#method-i-naive_count_segments">#naive_count_segments</a>
+    <li ><a href="#method-i-optimal_points">#optimal_points</a>
+    <li ><a href="#method-i-optimal_summands">#optimal_summands</a>
+    <li ><a href="#method-i-optimal_weight">#optimal_weight</a>
+    <li ><a href="#method-i-optimal_weight_items">#optimal_weight_items</a>
+    <li ><a href="#method-i-partition3">#partition3</a>
+    <li ><a href="#method-i-pisanoPeriod">#pisanoPeriod</a>
+    <li ><a href="#method-i-randomized_quick_sort">#randomized_quick_sort</a>
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="class-Object">
+  <h1 id="class-Object" class="class">
+    class Object
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  <section id="5Buntitled-5D" class="documentation-section">
+
+
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+        <dt id="Point">Point
+        <dd><p>Represents a point with x and y coordinates.</p>
+        <dt id="Segment">Segment
+        <dd><p>Represents a segment with a start and end point.</p>
+      </dl>
+    </section>
+
+
+
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Instance Methods</h3>
+       </header>
+
+      <div id="method-i-best_item" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">best_item</span><span
+              class="method-args">(weights, values)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Finds the index of the item with the highest value-to-weight ratio.</p>
+
+<p>This function identifies the item with the maximum value per unit of weight from the list of items. It is used in the fractional knapsack problem to determine which item provides the most value for its weight.</p>
+
+          <div class="method-source-code" id="best_item-source">
+            <pre><span class="ruby-comment"># File module3/fractional_knapsack.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">best_item</span>(<span class="ruby-identifier">weights</span>, <span class="ruby-identifier">values</span>)
+  <span class="ruby-identifier">bestItem</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">maxValuePerWeight</span> = <span class="ruby-value">0</span>
+  (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">/</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">maxValuePerWeight</span>
+        <span class="ruby-identifier">maxValuePerWeight</span> = <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">/</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>]
+        <span class="ruby-identifier">bestItem</span> = <span class="ruby-identifier">i</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">bestItem</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-binary_search" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">binary_search</span><span
+              class="method-args">(item, list)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Performs binary search for an item in a sorted list.</p>
+
+<p>This function searches for an item in a sorted list using the binary search algorithm. It returns the index of the item if found, otherwise it returns -1. The list must be sorted for the binary search to work correctly.</p>
+
+          <div class="method-source-code" id="binary_search-source">
+            <pre><span class="ruby-comment"># File module4/binary_search.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">binary_search</span>(<span class="ruby-identifier">item</span>, <span class="ruby-identifier">list</span>)
+  <span class="ruby-identifier">low</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">high</span> = <span class="ruby-identifier">list</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+  
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">low</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">high</span>
+    <span class="ruby-identifier">mid</span> = (<span class="ruby-identifier">low</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">high</span>) <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+    <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">list</span>[<span class="ruby-identifier">mid</span>]
+
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">mid</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">item</span>
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">item</span>
+      <span class="ruby-identifier">high</span> = <span class="ruby-identifier">mid</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">low</span> = <span class="ruby-identifier">mid</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-value">-1</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-binary_search_with_duplicates" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">binary_search_with_duplicates</span><span
+              class="method-args">(item, list)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Performs binary search for an item in a sorted list with possible duplicates.</p>
+
+<p>This function searches for the first occurrence of an item in a sorted list that may contain duplicate values. It returns the index of the item if found, otherwise it returns -1. The search continues to the left even after finding the item to ensure the first occurrence is located.</p>
+
+          <div class="method-source-code" id="binary_search_with_duplicates-source">
+            <pre><span class="ruby-comment"># File module4/binary_search_duplicates.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">binary_search_with_duplicates</span>(<span class="ruby-identifier">item</span>, <span class="ruby-identifier">list</span>)
+  <span class="ruby-identifier">low</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">high</span> = <span class="ruby-identifier">list</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">result</span> = <span class="ruby-value">-1</span>
+  
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">low</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">high</span>
+    <span class="ruby-identifier">mid</span> = (<span class="ruby-identifier">low</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">high</span>) <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+    <span class="ruby-identifier">guess</span> = <span class="ruby-identifier">list</span>[<span class="ruby-identifier">mid</span>]
+
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">item</span>
+      <span class="ruby-identifier">result</span> = <span class="ruby-identifier">mid</span>
+      <span class="ruby-identifier">high</span> = <span class="ruby-identifier">mid</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>  
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">guess</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">item</span>
+      <span class="ruby-identifier">high</span> = <span class="ruby-identifier">mid</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">low</span> = <span class="ruby-identifier">mid</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">result</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-calc_fib" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">calc_fib</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>This function computes the nth Fibonacci number using an iterative approach.</p>
+
+          <div class="method-source-code" id="calc_fib-source">
+            <pre><span class="ruby-comment"># File module2/fibonacci.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">calc_fib</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">f</span>=[] <span class="ruby-operator">*</span> (<span class="ruby-identifier">n</span><span class="ruby-value">+1</span>)
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">0</span>]=<span class="ruby-value">0</span>
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">1</span>]=<span class="ruby-value">1</span>
+  (<span class="ruby-value">2</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">2</span>] }
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">n</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-change" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">change</span><span
+              class="method-args">(amount)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the minimum number of coins needed to make up a given amount. This method calculates the minimum number of coins required to make up the specified amount using a dynamic programming approach.</p>
+
+          <div class="method-source-code" id="change-source">
+            <pre><span class="ruby-comment"># File module5/change_dp.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">change</span>(<span class="ruby-identifier">amount</span>)
+  <span class="ruby-identifier">denominations</span> = [<span class="ruby-value">1</span>, <span class="ruby-value">3</span>, <span class="ruby-value">4</span>]
+  <span class="ruby-identifier">f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">amount</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>)
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">amount</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">denominations</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">coin</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">coin</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">i</span>
+        <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = [<span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">coin</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">min</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">f</span>[<span class="ruby-identifier">amount</span>] <span class="ruby-operator">==</span> <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span> <span class="ruby-operator">?</span> <span class="ruby-value">-1</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">amount</span>]
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">amount</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-copy" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">copy</span><span
+              class="method-args">(a, b, l, r)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Copies elements from one array to another within a specified range.</p>
+
+          <div class="method-source-code" id="copy-source">
+            <pre><span class="ruby-comment"># File module4/inversions.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">copy</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">r</span>)
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">r</span>
+    <span class="ruby-identifier">b</span>[<span class="ruby-identifier">l</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">l</span>]
+    <span class="ruby-identifier">l</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-count_occurrences" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">count_occurrences</span><span
+              class="method-args">(nums, target)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Counts the number of occurrences of a specific element in an array.</p>
+
+          <div class="method-source-code" id="count_occurrences-source">
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 30</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">count_occurrences</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">target</span>)
+  <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">count</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">target</span> }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-edit_distance" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">edit_distance</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the edit distance between two strings. The edit distance between two strings is the minimum number of single-character edits (insertions, deletions, or substitutions) required to transform one string into the other. This function uses dynamic programming to compute this distance.</p>
+
+          <div class="method-source-code" id="edit_distance-source">
+            <pre><span class="ruby-comment"># File module5/edit_distance.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">edit_distance</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">b</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">d</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">m</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) }
+
+  (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span>][<span class="ruby-value">0</span>] = <span class="ruby-identifier">i</span>
+  <span class="ruby-keyword">end</span>
+
+  (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">m</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">d</span>[<span class="ruby-value">0</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">j</span>
+  <span class="ruby-keyword">end</span>
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">m</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">insertion</span> = <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">deletion</span> = <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">match</span> = <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+      <span class="ruby-identifier">mismatch</span> = <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">j</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+        <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = [<span class="ruby-identifier">insertion</span>, <span class="ruby-identifier">deletion</span>, <span class="ruby-identifier">match</span>].<span class="ruby-identifier">min</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">d</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = [<span class="ruby-identifier">insertion</span>, <span class="ruby-identifier">deletion</span>, <span class="ruby-identifier">mismatch</span>].<span class="ruby-identifier">min</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">d</span>[<span class="ruby-identifier">n</span>][<span class="ruby-identifier">m</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-euclidean_distance" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">euclidean_distance</span><span
+              class="method-args">(p1, p2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the Euclidean distance between two points.</p>
+
+          <div class="method-source-code" id="euclidean_distance-source">
+            <pre><span class="ruby-comment"># File module4/closest.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">euclidean_distance</span>(<span class="ruby-identifier">p1</span>, <span class="ruby-identifier">p2</span>)
+  <span class="ruby-constant">Math</span>.<span class="ruby-identifier">sqrt</span>((<span class="ruby-identifier">p1</span>.<span class="ruby-identifier">x</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">p2</span>.<span class="ruby-identifier">x</span>)<span class="ruby-operator">**</span><span class="ruby-value">2</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">p1</span>.<span class="ruby-identifier">y</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">p2</span>.<span class="ruby-identifier">y</span>)<span class="ruby-operator">**</span><span class="ruby-value">2</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-evaluate" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">evaluate</span><span
+              class="method-args">(a, op, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Evaluates the result of applying an operation to two numbers.</p>
+
+          <div class="method-source-code" id="evaluate-source">
+            <pre><span class="ruby-comment"># File module6/placing_parentheses.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">evaluate</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">op</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">ops</span> = {
+    <span class="ruby-string">&#39;+&#39;</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-operator">-&gt;</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>) { <span class="ruby-identifier">x</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">y</span> },
+    <span class="ruby-string">&#39;-&#39;</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-operator">-&gt;</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>) { <span class="ruby-identifier">x</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">y</span> },
+    <span class="ruby-string">&#39;*&#39;</span> <span class="ruby-operator">=&gt;</span> <span class="ruby-operator">-&gt;</span>(<span class="ruby-identifier">x</span>, <span class="ruby-identifier">y</span>) { <span class="ruby-identifier">x</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">y</span> }
+  }
+  <span class="ruby-identifier">ops</span>[<span class="ruby-identifier">op</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fast_count_segments" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fast_count_segments</span><span
+              class="method-args">(segments, points)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Counts the number of segments that contain each of the given points.</p>
+
+<p>The algorithm uses an event-based approach where segments’ start and end points are treated as events, and each point is counted based on the number of active segments at that point. (Organizing a lottery)</p>
+
+          <div class="method-source-code" id="fast_count_segments-source">
+            <pre><span class="ruby-comment"># File module4/points_and_segments.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fast_count_segments</span>(<span class="ruby-identifier">segments</span>, <span class="ruby-identifier">points</span>)
+  <span class="ruby-identifier">count</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">points</span>.<span class="ruby-identifier">size</span>, <span class="ruby-value">0</span>)
+  <span class="ruby-identifier">point_map</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">h</span>, <span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>] = [] }
+
+  <span class="ruby-identifier">points</span>.<span class="ruby-identifier">each_with_index</span>  <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">p</span>, <span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">point_map</span>[<span class="ruby-identifier">p</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">i</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">events</span> = []
+
+  <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">segment</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">segment</span>.<span class="ruby-identifier">a</span>, <span class="ruby-value">:start</span>]
+    <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">segment</span>.<span class="ruby-identifier">b</span>, <span class="ruby-value">:end</span>]
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-identifier">points</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">point</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">events</span> <span class="ruby-operator">&lt;&lt;</span> [<span class="ruby-identifier">point</span>, <span class="ruby-value">:point</span>]
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">events</span>.<span class="ruby-identifier">sort_by!</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span> [<span class="ruby-identifier">x</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">x</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-value">:start</span> <span class="ruby-operator">?</span> <span class="ruby-value">-1</span> <span class="ruby-operator">:</span> (<span class="ruby-identifier">x</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-value">:end</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">0</span>)] }
+
+
+  <span class="ruby-identifier">segments_active</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">events</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">event</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">case</span> <span class="ruby-identifier">event</span>[<span class="ruby-value">1</span>]
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:start</span>
+      <span class="ruby-identifier">segments_active</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:end</span>
+      <span class="ruby-identifier">segments_active</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-value">:point</span>
+      <span class="ruby-identifier">point_map</span>[<span class="ruby-identifier">event</span>[<span class="ruby-value">0</span>]].<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+        <span class="ruby-identifier">count</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">segments_active</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+
+
+  <span class="ruby-identifier">count</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fib_huge" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fib_huge</span><span
+              class="method-args">(n, m)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the nth Fibonacci number modulo m.</p>
+
+<p>This function uses the Pisano period to efficiently compute the nth Fibonacci number modulo m.</p>
+
+          <div class="method-source-code" id="fib_huge-source">
+            <pre><span class="ruby-comment"># File module2/fibonacci_huge.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fib_huge</span>(<span class="ruby-identifier">n</span>, <span class="ruby-identifier">m</span>)
+  <span class="ruby-identifier">pisano_period</span> = <span class="ruby-identifier">pisanoPeriod</span>(<span class="ruby-identifier">m</span>)
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">n</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">pisano_period</span>
+
+  <span class="ruby-identifier">previous</span>, <span class="ruby-identifier">current</span> = <span class="ruby-value">0</span>, <span class="ruby-value">1</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-value">0</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+    (<span class="ruby-identifier">n</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>).<span class="ruby-identifier">times</span> { <span class="ruby-identifier">previous</span>, <span class="ruby-identifier">current</span> = <span class="ruby-identifier">current</span>, <span class="ruby-identifier">previous</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">current</span> }
+    <span class="ruby-keyword">return</span> (<span class="ruby-identifier">current</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">m</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fib_last_digit" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fib_last_digit</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the last digit of the nth Fibonacci number.</p>
+
+<p>This function computes the last digit of the nth Fibonacci number using an iterative approach.</p>
+
+          <div class="method-source-code" id="fib_last_digit-source">
+            <pre><span class="ruby-comment"># File module2/fibonacci_last_digit.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fib_last_digit</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">f</span>=[] <span class="ruby-operator">*</span> (<span class="ruby-identifier">n</span><span class="ruby-value">+1</span>)
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">0</span>]=<span class="ruby-value">0</span>
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">1</span>]=<span class="ruby-value">1</span>
+  (<span class="ruby-value">2</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = (<span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">%</span> <span class="ruby-value">10</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">2</span>] <span class="ruby-operator">%</span> <span class="ruby-value">10</span>) <span class="ruby-operator">%</span> <span class="ruby-value">10</span> }
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">n</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fib_last_digit_of_sum" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fib_last_digit_of_sum</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the last digit of the sum of Fibonacci numbers up to the nth number.</p>
+
+<p>This function uses the Pisano period to efficiently compute the last digit of the sum.</p>
+
+          <div class="method-source-code" id="fib_last_digit_of_sum-source">
+            <pre><span class="ruby-comment"># File module2/fib_last_digit_of_sum.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fib_last_digit_of_sum</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">n</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">pisanoPeriod</span>(<span class="ruby-value">10</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">n</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+  <span class="ruby-identifier">f</span>=[] <span class="ruby-operator">*</span> (<span class="ruby-identifier">n</span><span class="ruby-value">+1</span>)
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">0</span>]=<span class="ruby-value">0</span>
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">1</span>]=<span class="ruby-value">1</span>
+  (<span class="ruby-value">2</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+     <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = (<span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">2</span>]) <span class="ruby-operator">%</span> <span class="ruby-value">10</span>}
+  <span class="ruby-identifier">f</span>.<span class="ruby-identifier">sum</span> <span class="ruby-operator">%</span> <span class="ruby-value">10</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fib_partial_sum" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fib_partial_sum</span><span
+              class="method-args">(m, n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the last digit of the sum of Fibonacci numbers in a given range.</p>
+
+<p>This function uses the Pisano period to efficiently compute the last digit of the sum of Fibonacci numbers from F(m) to F(n).</p>
+
+          <div class="method-source-code" id="fib_partial_sum-source">
+            <pre><span class="ruby-comment"># File module2/fib_partial_sum.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fib_partial_sum</span>(<span class="ruby-identifier">m</span>, <span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">m_pisano</span> = <span class="ruby-identifier">pisanoPeriod</span>(<span class="ruby-value">10</span>)
+  <span class="ruby-identifier">n_pisano</span> = <span class="ruby-identifier">pisanoPeriod</span>(<span class="ruby-value">10</span>)
+  
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">m</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">m_pisano</span>
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">n</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">n_pisano</span>
+  
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">m</span>
+    <span class="ruby-identifier">n</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">m_pisano</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">f</span> = [<span class="ruby-value">0</span>, <span class="ruby-value">1</span>]
+  (<span class="ruby-value">2</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = (<span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">2</span>]) <span class="ruby-operator">%</span> <span class="ruby-value">10</span> }
+
+  <span class="ruby-identifier">sum</span> = <span class="ruby-identifier">f</span>[<span class="ruby-identifier">m</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>].<span class="ruby-identifier">sum</span> <span class="ruby-operator">%</span> <span class="ruby-value">10</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">sum</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-fib_sum_of_squares" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">fib_sum_of_squares</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="fib_sum_of_squares-source">
+            <pre><span class="ruby-comment"># File module2/fibonacci_sum_of_squares.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">fib_sum_of_squares</span>(<span class="ruby-identifier">n</span>)
+  (<span class="ruby-identifier">fib_last_digit</span>(<span class="ruby-identifier">n</span>) <span class="ruby-operator">*</span> <span class="ruby-identifier">fib_last_digit</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>)) <span class="ruby-operator">%</span> <span class="ruby-value">10</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-find_candidate" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">find_candidate</span><span
+              class="method-args">(nums)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>This algorithm identifies a potential majority element by keeping a count that is incremented or decremented based on whether the current element matches the candidate.</p>
+
+          <div class="method-source-code" id="find_candidate-source">
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 16</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find_candidate</span>(<span class="ruby-identifier">nums</span>)
+  <span class="ruby-identifier">count</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">candidate</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">candidate</span> = <span class="ruby-identifier">num</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">count</span> <span class="ruby-operator">+=</span> (<span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">candidate</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">-1</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">candidate</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-gcd" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">gcd</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the greatest common divisor (GCD) of two numbers using the Euclidean algorithm.</p>
+
+          <div class="method-source-code" id="gcd-source">
+            <pre><span class="ruby-comment"># File module2/gcd.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">gcd</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">a</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">b</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">gcd</span>(<span class="ruby-identifier">b</span>, <span class="ruby-identifier">a</span> <span class="ruby-operator">%</span> <span class="ruby-identifier">b</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_change" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_change</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the minimum number of coins needed to make change for a given amount.</p>
+
+          <div class="method-source-code" id="get_change-source">
+            <pre><span class="ruby-comment"># File module3/change.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_change</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">denominations</span> = [<span class="ruby-value">1</span>, <span class="ruby-value">5</span>, <span class="ruby-value">10</span>]
+  <span class="ruby-identifier">f</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>)
+  <span class="ruby-identifier">f</span>[<span class="ruby-value">0</span>] = <span class="ruby-value">0</span>
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">denominations</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">coin</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">coin</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">i</span>
+        <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>] = [<span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">f</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">coin</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>].<span class="ruby-identifier">min</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">f</span>[<span class="ruby-identifier">n</span>] <span class="ruby-operator">==</span> <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span> <span class="ruby-operator">?</span> <span class="ruby-value">-1</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">f</span>[<span class="ruby-identifier">n</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_majority_element" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_majority_element</span><span
+              class="method-args">(nums)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Finds the majority element in an array if it exists.</p>
+
+<p>A majority element is an element that appears more than ‘n/2` times in the array, where `n` is the number of elements in the array.</p>
+
+          <div class="method-source-code" id="get_majority_element-source">
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_majority_element</span>(<span class="ruby-identifier">nums</span>)
+  <span class="ruby-identifier">candidate</span> = <span class="ruby-identifier">find_candidate</span>(<span class="ruby-identifier">nums</span>)
+  <span class="ruby-identifier">count</span> = <span class="ruby-identifier">count_occurrences</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">candidate</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">candidate</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_maximum_value" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_maximum_value</span><span
+              class="method-args">(numbers, operations)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the maximum value of an arithmetic expression given a list of numbers and operations. Utilizes dynamic programming to find the optimal placement of parentheses.</p>
+
+          <div class="method-source-code" id="get_maximum_value-source">
+            <pre><span class="ruby-comment"># File module6/placing_parentheses.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_maximum_value</span>(<span class="ruby-identifier">numbers</span>, <span class="ruby-identifier">operations</span>)
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">numbers</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-identifier">mmin</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>) }
+  <span class="ruby-identifier">mmax</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span>) }
+
+  (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span>]
+    <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">numbers</span>[<span class="ruby-identifier">i</span>]
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-comment"># Fills the DP table with minimum and maximum values for subexpressions</span>
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">min_and_max</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">mmin</span>, <span class="ruby-identifier">mmax</span>, <span class="ruby-identifier">operations</span>)
+    <span class="ruby-identifier">min</span> = <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>
+    <span class="ruby-identifier">max</span> = <span class="ruby-operator">-</span><span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>
+    (<span class="ruby-identifier">i</span><span class="ruby-operator">...</span><span class="ruby-identifier">j</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">a</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+      <span class="ruby-identifier">b</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+      <span class="ruby-identifier">c</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+      <span class="ruby-identifier">d</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+      <span class="ruby-identifier">min</span> = [<span class="ruby-identifier">min</span>, <span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">c</span>, <span class="ruby-identifier">d</span>].<span class="ruby-identifier">min</span>
+      <span class="ruby-identifier">max</span> = [<span class="ruby-identifier">max</span>, <span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">c</span>, <span class="ruby-identifier">d</span>].<span class="ruby-identifier">max</span>
+    <span class="ruby-keyword">end</span>
+    [<span class="ruby-identifier">min</span>, <span class="ruby-identifier">max</span>]
+  <span class="ruby-keyword">end</span>
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">...</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">0</span><span class="ruby-operator">...</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">s</span>)).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">j</span> = <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">s</span>
+      <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>], <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">min_and_max</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">mmin</span>, <span class="ruby-identifier">mmax</span>, <span class="ruby-identifier">operations</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">mmax</span>[<span class="ruby-value">0</span>][<span class="ruby-identifier">n</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_number_of_inversions" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_number_of_inversions</span><span
+              class="method-args">(a, b, left, right)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the total number of inversions in an array using merge sort.</p>
+
+          <div class="method-source-code" id="get_number_of_inversions-source">
+            <pre><span class="ruby-comment"># File module4/inversions.rb, line 50</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_number_of_inversions</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">right</span>)
+  <span class="ruby-identifier">number_of_inversions</span> = <span class="ruby-value">0</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-value">0</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">right</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">left</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">mid</span> = <span class="ruby-identifier">left</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">right</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">left</span>) <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+  <span class="ruby-identifier">number_of_inversions</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">get_number_of_inversions</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">mid</span>)
+  <span class="ruby-identifier">number_of_inversions</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">get_number_of_inversions</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">mid</span>, <span class="ruby-identifier">right</span>)
+  <span class="ruby-identifier">number_of_inversions</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">merge_and_count</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">mid</span>, <span class="ruby-identifier">right</span>)
+
+  <span class="ruby-identifier">number_of_inversions</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_optimal_value" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_optimal_value</span><span
+              class="method-args">(capacity, weights, values)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the maximum value that can be obtained with a given knapsack capacity.</p>
+
+<p>This function solves the fractional knapsack problem by iteratively selecting the item with the highest value-to-weight ratio and adding as much of it as possible to the knapsack until the capacity is full.</p>
+
+          <div class="method-source-code" id="get_optimal_value-source">
+            <pre><span class="ruby-comment"># File module3/fractional_knapsack.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_optimal_value</span>(<span class="ruby-identifier">capacity</span>, <span class="ruby-identifier">weights</span>, <span class="ruby-identifier">values</span>)
+  <span class="ruby-identifier">totalValue</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>.<span class="ruby-identifier">times</span> {
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">totalValue</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">capacity</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">i</span> = <span class="ruby-identifier">best_item</span>(<span class="ruby-identifier">weights</span>, <span class="ruby-identifier">values</span>)
+    <span class="ruby-identifier">a</span> = [<span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">capacity</span>].<span class="ruby-identifier">min</span>
+    <span class="ruby-identifier">totalValue</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">/</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>]
+    <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">-=</span> <span class="ruby-identifier">a</span>
+    <span class="ruby-identifier">capacity</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">a</span>
+  }
+  <span class="ruby-identifier">totalValue</span>
+
+
+  
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-largest_number" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">largest_number</span><span
+              class="method-args">(a)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Forms the largest number possible by concatenating given numbers.</p>
+
+<p>This function takes an array of digits in string format, and sorts them in such a way that concatenating them in that order yields the largest possible number. The sorting is based on string comparison where the numbers are first repeated 10 times to ensure proper sorting when concatenated.</p>
+
+          <div class="method-source-code" id="largest_number-source">
+            <pre><span class="ruby-comment"># File module3/largest_number.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">largest_number</span>(<span class="ruby-identifier">a</span>)
+  <span class="ruby-identifier">sorted_str_nums</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">sort_by</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">*</span> <span class="ruby-value">10</span>}.<span class="ruby-identifier">reverse</span>.<span class="ruby-identifier">join</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-lcm" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">lcm</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the least common multiple (LCM) of two numbers.</p>
+
+<p>This function computes the LCM of two integers a and b using their GCD. The LCM is calculated as the product of a and b divided by their GCD.</p>
+
+          <div class="method-source-code" id="lcm-source">
+            <pre><span class="ruby-comment"># File module2/lcm.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lcm</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">b</span> <span class="ruby-operator">/</span> <span class="ruby-identifier">gcd</span>(<span class="ruby-identifier">a</span>,<span class="ruby-identifier">b</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-lcs3" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">lcs3</span><span
+              class="method-args">(arr1, arr2, arr3)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the length of the longest common subsequence among three arrays using dynamic programming.</p>
+
+          <div class="method-source-code" id="lcs3-source">
+            <pre><span class="ruby-comment"># File module5/lcs3.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">lcs3</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>, <span class="ruby-identifier">arr3</span>)
+  <span class="ruby-identifier">cell</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr3</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>)}}
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">arr3</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">arr1</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">arr2</span>[<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>] <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">arr1</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">arr3</span>[<span class="ruby-identifier">k</span><span class="ruby-value">-1</span>]
+          <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">k</span><span class="ruby-value">-1</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-identifier">k</span>] = [<span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">j</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>][<span class="ruby-identifier">k</span><span class="ruby-value">-1</span>]].<span class="ruby-identifier">max</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span>][<span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span>][<span class="ruby-identifier">arr3</span>.<span class="ruby-identifier">length</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-longest_common_subsequence" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">longest_common_subsequence</span><span
+              class="method-args">(arr1, arr2)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Computes the length of the longest common subsequence (LCS) between two sequences.</p>
+
+<p>The longest common subsequence is the longest sequence that appears in both of the given sequences in the same order, but not necessarily consecutively.</p>
+
+          <div class="method-source-code" id="longest_common_subsequence-source">
+            <pre><span class="ruby-comment"># File module5/longest_common_subsequence.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">longest_common_subsequence</span>(<span class="ruby-identifier">arr1</span>, <span class="ruby-identifier">arr2</span>)
+  <span class="ruby-identifier">cell</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>) }
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">arr1</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">arr2</span>[<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>]
+        <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>] <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span>] = [<span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span><span class="ruby-value">-1</span>][<span class="ruby-identifier">j</span>], <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">j</span><span class="ruby-value">-1</span>]].<span class="ruby-identifier">max</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">cell</span>[<span class="ruby-identifier">arr1</span>.<span class="ruby-identifier">length</span>][<span class="ruby-identifier">arr2</span>.<span class="ruby-identifier">length</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-max" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">max</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Utility function to find the maximum of two values.</p>
+
+          <div class="method-source-code" id="max-source">
+            <pre><span class="ruby-comment"># File module6/knapsack.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">max</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">b</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-max_dot_product" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">max_dot_product</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the maximum dot product of two arrays.</p>
+
+<p>This function computes the maximum dot product by sorting both arrays in ascending order and then calculating the sum of the products of corresponding elements.</p>
+
+          <div class="method-source-code" id="max_dot_product-source">
+            <pre><span class="ruby-comment"># File module3/dot_product.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">max_dot_product</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span>.<span class="ruby-identifier">sort!</span>
+  <span class="ruby-identifier">b</span>.<span class="ruby-identifier">sort!</span>
+  <span class="ruby-identifier">a</span>.<span class="ruby-identifier">size</span>.<span class="ruby-identifier">times</span>.<span class="ruby-identifier">collect</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">*</span> <span class="ruby-identifier">b</span>[<span class="ruby-identifier">i</span>] }.<span class="ruby-identifier">sum</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-max_pairwise_product" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">max_pairwise_product</span><span
+              class="method-args">(a)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the maximum pairwise product of an array.</p>
+
+          <div class="method-source-code" id="max_pairwise_product-source">
+            <pre><span class="ruby-comment"># File module1/max_pairwise_product.rb, line 3</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">max_pairwise_product</span>(<span class="ruby-identifier">a</span>)
+  <span class="ruby-identifier">max1</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">max</span>
+  <span class="ruby-identifier">a</span>.<span class="ruby-identifier">delete_at</span>(<span class="ruby-identifier">a</span>.<span class="ruby-identifier">index</span>(<span class="ruby-identifier">max1</span>))
+  <span class="ruby-identifier">max2</span> = <span class="ruby-identifier">a</span>.<span class="ruby-identifier">max</span>
+  <span class="ruby-identifier">max1</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">max2</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-merge_and_count" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">merge_and_count</span><span
+              class="method-args">(a, b, left, mid, right)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Merges two sorted subarrays and counts the number of inversions.</p>
+
+          <div class="method-source-code" id="merge_and_count-source">
+            <pre><span class="ruby-comment"># File module4/inversions.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">merge_and_count</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">mid</span>, <span class="ruby-identifier">right</span>)
+  <span class="ruby-identifier">i</span> = <span class="ruby-identifier">left</span>
+  <span class="ruby-identifier">j</span> = <span class="ruby-identifier">mid</span>
+  <span class="ruby-identifier">k</span> = <span class="ruby-identifier">left</span>
+  <span class="ruby-identifier">number_of_inversions</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">mid</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">right</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">j</span>]
+      <span class="ruby-identifier">b</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">b</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">j</span>]
+      <span class="ruby-identifier">number_of_inversions</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">mid</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">i</span>
+      <span class="ruby-identifier">j</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">k</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">mid</span>
+    <span class="ruby-identifier">b</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>]
+    <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">k</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">j</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">right</span>
+    <span class="ruby-identifier">b</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">j</span>]
+    <span class="ruby-identifier">j</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-identifier">k</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+  (<span class="ruby-identifier">left</span><span class="ruby-operator">...</span><span class="ruby-identifier">right</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">b</span>[<span class="ruby-identifier">i</span>]
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">number_of_inversions</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-min" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">min</span><span
+              class="method-args">(a, b)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Utility function to find the minimum of two values.</p>
+
+          <div class="method-source-code" id="min-source">
+            <pre><span class="ruby-comment"># File module4/closest.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">min</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>)
+  <span class="ruby-identifier">a</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">b</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">a</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">b</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-min_and_max" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">min_and_max</span><span
+              class="method-args">(i, j, mmin, mmax, operations)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Fills the DP table with minimum and maximum values for subexpressions</p>
+
+          <div class="method-source-code" id="min_and_max-source">
+            <pre><span class="ruby-comment"># File module6/placing_parentheses.rb, line 26</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">min_and_max</span>(<span class="ruby-identifier">i</span>, <span class="ruby-identifier">j</span>, <span class="ruby-identifier">mmin</span>, <span class="ruby-identifier">mmax</span>, <span class="ruby-identifier">operations</span>)
+  <span class="ruby-identifier">min</span> = <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>
+  <span class="ruby-identifier">max</span> = <span class="ruby-operator">-</span><span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>
+  (<span class="ruby-identifier">i</span><span class="ruby-operator">...</span><span class="ruby-identifier">j</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">k</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">a</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+    <span class="ruby-identifier">b</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+    <span class="ruby-identifier">c</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmax</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+    <span class="ruby-identifier">d</span> = <span class="ruby-identifier">evaluate</span>(<span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">k</span>], <span class="ruby-identifier">operations</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">mmin</span>[<span class="ruby-identifier">k</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">j</span>])
+    <span class="ruby-identifier">min</span> = [<span class="ruby-identifier">min</span>, <span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">c</span>, <span class="ruby-identifier">d</span>].<span class="ruby-identifier">min</span>
+    <span class="ruby-identifier">max</span> = [<span class="ruby-identifier">max</span>, <span class="ruby-identifier">a</span>, <span class="ruby-identifier">b</span>, <span class="ruby-identifier">c</span>, <span class="ruby-identifier">d</span>].<span class="ruby-identifier">max</span>
+  <span class="ruby-keyword">end</span>
+  [<span class="ruby-identifier">min</span>, <span class="ruby-identifier">max</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-min_refills" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">min_refills</span><span
+              class="method-args">(d, m, stops)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the minimum number of refills required to travel a distance with a given range and stops.</p>
+
+<p>This function determines the minimum number of refills needed to travel a distance ‘d` with a vehicle that has a maximum range `m` between refills. It uses a list of available stops to decide where to refill.</p>
+
+          <div class="method-source-code" id="min_refills-source">
+            <pre><span class="ruby-comment"># File module3/car_fueling.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">min_refills</span>(<span class="ruby-identifier">d</span>, <span class="ruby-identifier">m</span>, <span class="ruby-identifier">stops</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-value">0</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">d</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">m</span>
+
+  <span class="ruby-identifier">distance_thus_far</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">refills</span> = <span class="ruby-value">0</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">distance_thus_far</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">m</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">d</span>
+    <span class="ruby-identifier">reachable_stops</span> = <span class="ruby-identifier">stops</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">distance</span><span class="ruby-operator">|</span> <span class="ruby-identifier">distance</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">distance_thus_far</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">m</span> }
+    <span class="ruby-keyword">return</span> <span class="ruby-value">-1</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">reachable_stops</span>.<span class="ruby-identifier">empty?</span>
+
+    <span class="ruby-identifier">distance_thus_far</span> = <span class="ruby-identifier">reachable_stops</span>.<span class="ruby-identifier">max</span>
+    <span class="ruby-identifier">refills</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+
+    <span class="ruby-identifier">stops</span> = <span class="ruby-identifier">stops</span>.<span class="ruby-identifier">drop_while</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">distance</span><span class="ruby-operator">|</span> <span class="ruby-identifier">distance</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">distance_thus_far</span> }
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">refills</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-minimum_distance" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">minimum_distance</span><span
+              class="method-args">(points)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Finds the minimum distance between any two points in a given set of points.</p>
+
+          <div class="method-source-code" id="minimum_distance-source">
+            <pre><span class="ruby-comment"># File module4/closest.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">minimum_distance</span>(<span class="ruby-identifier">points</span>)
+  <span class="ruby-identifier">n</span> = <span class="ruby-identifier">points</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-value">1</span>
+
+  <span class="ruby-identifier">mid</span> = <span class="ruby-identifier">n</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+  <span class="ruby-identifier">left</span> = <span class="ruby-identifier">points</span>[<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">mid</span>]
+  <span class="ruby-identifier">right</span> = <span class="ruby-identifier">points</span>[<span class="ruby-identifier">mid</span><span class="ruby-operator">...</span><span class="ruby-identifier">n</span>]
+  <span class="ruby-identifier">d1</span> = <span class="ruby-identifier">minimum_distance</span>(<span class="ruby-identifier">left</span>)
+  <span class="ruby-identifier">d2</span> = <span class="ruby-identifier">minimum_distance</span>(<span class="ruby-identifier">right</span>)
+  <span class="ruby-identifier">d</span>= <span class="ruby-identifier">min</span>(<span class="ruby-identifier">d1</span>, <span class="ruby-identifier">d2</span>)
+  <span class="ruby-identifier">mid_x</span> = <span class="ruby-identifier">points</span>[<span class="ruby-identifier">mid</span>].<span class="ruby-identifier">x</span>
+  <span class="ruby-identifier">in_strip</span> = <span class="ruby-identifier">points</span>.<span class="ruby-identifier">select</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">point</span><span class="ruby-operator">|</span> (<span class="ruby-identifier">point</span>.<span class="ruby-identifier">x</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">mid_x</span>).<span class="ruby-identifier">abs</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">d</span> }
+  <span class="ruby-identifier">in_strip</span>.<span class="ruby-identifier">sort_by!</span>(<span class="ruby-operator">&amp;</span><span class="ruby-value">:y</span>)
+
+  <span class="ruby-identifier">d_</span> = <span class="ruby-constant">Float</span><span class="ruby-operator">::</span><span class="ruby-constant">INFINITY</span>
+  (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">in_strip</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span><span class="ruby-operator">...</span><span class="ruby-identifier">min</span>(<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">7</span>, <span class="ruby-identifier">in_strip</span>.<span class="ruby-identifier">length</span>)).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">j</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">d_</span> = <span class="ruby-identifier">min</span>(<span class="ruby-identifier">d_</span>, <span class="ruby-identifier">euclidean_distance</span>(<span class="ruby-identifier">in_strip</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">in_strip</span>[<span class="ruby-identifier">j</span>]))
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">min</span>(<span class="ruby-identifier">d</span>,<span class="ruby-identifier">d_</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-minimum_operations" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">minimum_operations</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Finds the minimum sequence of operations to reach a number ‘n` starting from 1.</p>
+
+<p>The function computes the sequence of operations required to reach the number ‘n` using the minimum number of steps. The allowed operations are adding 1, multiplying by 2, and multiplying by 3. The function uses dynamic programming to build up the solution from smaller subproblems.</p>
+
+          <div class="method-source-code" id="minimum_operations-source">
+            <pre><span class="ruby-comment"># File module5/primitive_calculator.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">minimum_operations</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">answer</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">n</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, [])
+  <span class="ruby-identifier">answer</span>[<span class="ruby-value">0</span>] = []
+  <span class="ruby-identifier">answer</span>[<span class="ruby-value">1</span>] = [<span class="ruby-value">1</span>]
+  <span class="ruby-identifier">answer</span>[<span class="ruby-value">2</span>] = [<span class="ruby-value">1</span>, <span class="ruby-value">2</span>]
+  <span class="ruby-identifier">answer</span>[<span class="ruby-value">3</span>] = [<span class="ruby-value">1</span>, <span class="ruby-value">3</span>]
+(<span class="ruby-value">4</span><span class="ruby-operator">..</span><span class="ruby-identifier">n</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+  <span class="ruby-identifier">min_operations</span> = <span class="ruby-identifier">answer</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">+</span> [<span class="ruby-identifier">i</span>]
+  
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">3</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">operations_by_3</span> = <span class="ruby-identifier">answer</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">/</span> <span class="ruby-value">3</span>] <span class="ruby-operator">+</span> [<span class="ruby-identifier">i</span>]
+    <span class="ruby-identifier">min_operations</span> = <span class="ruby-identifier">operations_by_3</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">operations_by_3</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min_operations</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">%</span> <span class="ruby-value">2</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">operations_by_2</span> = <span class="ruby-identifier">answer</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>] <span class="ruby-operator">+</span> [<span class="ruby-identifier">i</span>]
+    <span class="ruby-identifier">min_operations</span> = <span class="ruby-identifier">operations_by_2</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">operations_by_2</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">min_operations</span>.<span class="ruby-identifier">length</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">answer</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-identifier">min_operations</span>
+
+
+<span class="ruby-keyword">end</span>
+<span class="ruby-identifier">answer</span>[<span class="ruby-identifier">n</span>]
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-naive_count_segments" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">naive_count_segments</span><span
+              class="method-args">(segments, points)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Naive approach to improve upon</p>
+
+          <div class="method-source-code" id="naive_count_segments-source">
+            <pre><span class="ruby-comment"># File module4/points_and_segments.rb, line 59</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">naive_count_segments</span>(<span class="ruby-identifier">segments</span>, <span class="ruby-identifier">points</span>)
+  <span class="ruby-identifier">points</span>.<span class="ruby-identifier">map</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">point</span><span class="ruby-operator">|</span> <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">count</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">s</span><span class="ruby-operator">|</span> <span class="ruby-identifier">s</span>.<span class="ruby-identifier">contains?</span>(<span class="ruby-identifier">point</span>) } }
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-optimal_points" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">optimal_points</span><span
+              class="method-args">(segments)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Determines the optimal points that cover all given segments.</p>
+
+<p>This function computes the minimum number of points required to cover all the given segments. It returns these points using a greedy algorithm approach</p>
+
+<p>@example</p>
+
+<pre class="ruby"><span class="ruby-identifier">segments</span> = [<span class="ruby-constant">Segment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">3</span>), <span class="ruby-constant">Segment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>, <span class="ruby-value">5</span>), <span class="ruby-constant">Segment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">4</span>, <span class="ruby-value">6</span>)]
+<span class="ruby-identifier">optimal_points</span>(<span class="ruby-identifier">segments</span>) <span class="ruby-comment"># =&gt; [3, 6]</span>
+</pre>
+
+          <div class="method-source-code" id="optimal_points-source">
+            <pre><span class="ruby-comment"># File module3/covering_segments.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">optimal_points</span>(<span class="ruby-identifier">segments</span>)
+  <span class="ruby-identifier">points</span> = []
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">points</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">empty?</span>
+  <span class="ruby-identifier">segments</span>.<span class="ruby-identifier">sort_by!</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">segment</span><span class="ruby-operator">|</span> <span class="ruby-identifier">segment</span>.<span class="ruby-identifier">end</span>}
+  <span class="ruby-identifier">point</span> = <span class="ruby-identifier">segments</span>[<span class="ruby-value">0</span>].<span class="ruby-identifier">end</span>
+  <span class="ruby-identifier">points</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">point</span>
+  (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">segments</span>.<span class="ruby-identifier">size</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> (<span class="ruby-identifier">point</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">segments</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">start</span> <span class="ruby-operator">||</span> <span class="ruby-identifier">point</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">segments</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">end</span>)
+      <span class="ruby-identifier">point</span> = <span class="ruby-identifier">segments</span>[<span class="ruby-identifier">i</span>].<span class="ruby-identifier">end</span>
+      <span class="ruby-identifier">points</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">point</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-identifier">points</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-optimal_summands" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">optimal_summands</span><span
+              class="method-args">(n)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the optimal summands that add up to a given number.</p>
+
+<p>This function finds the maximum number of distinct positive integers that sum up to a given number ‘n`. It greedily starts by adding the smallest possible integers (1, 2, 3, …) until the sum would exceed `n`. If there is any remainder, it adjusts the last summand to include the remaining amount.</p>
+
+<p>@example</p>
+
+<pre class="ruby"><span class="ruby-identifier">optimal_summands</span>(<span class="ruby-value">6</span>) <span class="ruby-comment"># =&gt; [1, 2, 3]</span>
+<span class="ruby-identifier">optimal_summands</span>(<span class="ruby-value">8</span>) <span class="ruby-comment"># =&gt; [1, 2, 5]</span>
+</pre>
+
+          <div class="method-source-code" id="optimal_summands-source">
+            <pre><span class="ruby-comment"># File module3/different_summands.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">optimal_summands</span>(<span class="ruby-identifier">n</span>)
+  <span class="ruby-identifier">summands</span> = []
+  <span class="ruby-identifier">sum</span> = <span class="ruby-value">0</span>
+  <span class="ruby-identifier">k</span> = <span class="ruby-value">1</span>
+
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">n</span>
+    <span class="ruby-identifier">summands</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">k</span>
+    <span class="ruby-identifier">sum</span> <span class="ruby-operator">+=</span> <span class="ruby-identifier">k</span>
+    <span class="ruby-identifier">k</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">summands</span>[<span class="ruby-value">-1</span>] <span class="ruby-operator">+=</span> <span class="ruby-identifier">n</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">sum</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">sum</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">n</span>
+
+  <span class="ruby-identifier">summands</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-optimal_weight" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">optimal_weight</span><span
+              class="method-args">(capacity, weights)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Solves the knapsack without replacement problem</p>
+
+          <div class="method-source-code" id="optimal_weight-source">
+            <pre><span class="ruby-comment"># File module6/knapsack.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">optimal_weight</span>(<span class="ruby-identifier">capacity</span>, <span class="ruby-identifier">weights</span>)
+  <span class="ruby-identifier">values</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">capacity</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>) }
+
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">capacity</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">w</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span>]
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">w</span>
+        <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = <span class="ruby-identifier">max</span>(<span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>], <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]] <span class="ruby-operator">+</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>])
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">values</span>[<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>][<span class="ruby-identifier">capacity</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-optimal_weight_items" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">optimal_weight_items</span><span
+              class="method-args">(capacity, weights)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          
+
+          <div class="method-source-code" id="optimal_weight_items-source">
+            <pre><span class="ruby-comment"># File module6/pirate_partition3.rb, line 1</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">optimal_weight_items</span>(<span class="ruby-identifier">capacity</span>, <span class="ruby-identifier">weights</span>)
+  <span class="ruby-identifier">values</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">capacity</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>) }
+  
+  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">capacity</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">w</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span>]
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">w</span>
+        <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = [<span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>], <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]] <span class="ruby-operator">+</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]].<span class="ruby-identifier">max</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">items</span> = []
+  <span class="ruby-identifier">w</span> = <span class="ruby-identifier">capacity</span>
+  (<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">1</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] <span class="ruby-operator">!=</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span>]
+      <span class="ruby-identifier">items</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+      <span class="ruby-identifier">w</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">items</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-partition3" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">partition3</span><span
+              class="method-args">(a, l, r)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Partitions an array into three parts based on a pivot element.</p>
+
+<p>This method partitions the array ‘a` between indices `l` and `r` into three segments: elements less than the pivot, elements equal to the pivot, and elements greater than the pivot. The pivot element is chosen as `<a href="l">a</a>`.</p>
+
+          <div class="method-source-code" id="partition3-source">
+            <pre><span class="ruby-comment"># File module4/sorting.rb, line 7</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">partition3</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">r</span>)
+  <span class="ruby-identifier">x</span> = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">l</span>]
+  <span class="ruby-identifier">m1</span> = <span class="ruby-identifier">l</span>
+  <span class="ruby-identifier">m2</span> = <span class="ruby-identifier">r</span>
+  <span class="ruby-identifier">i</span> = <span class="ruby-identifier">l</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">i</span> <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">m2</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">x</span>
+      <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">m1</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">m1</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-identifier">m1</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">x</span>
+      <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">m2</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">m2</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">i</span>]
+      <span class="ruby-identifier">m2</span> <span class="ruby-operator">-=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">i</span> <span class="ruby-operator">+=</span> <span class="ruby-value">1</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  [<span class="ruby-identifier">m1</span>, <span class="ruby-identifier">m2</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-pisanoPeriod" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">pisanoPeriod</span><span
+              class="method-args">(m)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Calculates the Pisano period for a given modulus.</p>
+
+<p>The Pisano period is the length of the cycle of Fibonacci numbers modulo m.</p>
+
+          <div class="method-source-code" id="pisanoPeriod-source">
+            <pre><span class="ruby-comment"># File module2/fib_last_digit_of_sum.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">pisanoPeriod</span>(<span class="ruby-identifier">m</span>)
+  <span class="ruby-identifier">previous</span>, <span class="ruby-identifier">current</span> = <span class="ruby-value">0</span>, <span class="ruby-value">1</span>
+  (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-identifier">m</span> <span class="ruby-operator">*</span> <span class="ruby-identifier">m</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">previous</span>, <span class="ruby-identifier">current</span> = <span class="ruby-identifier">current</span>, (<span class="ruby-identifier">previous</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">current</span>) <span class="ruby-operator">%</span> <span class="ruby-identifier">m</span>
+    <span class="ruby-keyword">return</span> (<span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">previous</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">current</span> <span class="ruby-operator">==</span> <span class="ruby-value">1</span>
+  <span class="ruby-keyword">end</span>
+
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-randomized_quick_sort" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">randomized_quick_sort</span><span
+              class="method-args">(a, l, r)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Performs a randomized quicksort on the array.</p>
+
+<p>This method recursively sorts the array ‘a` between indices `l` and `r` using the randomized quicksort algorithm. A random element is chosen as the pivot, and the array is partitioned into three parts: elements less than the pivot, elements equal to the pivot, and elements greater than the pivot.</p>
+
+          <div class="method-source-code" id="randomized_quick_sort-source">
+            <pre><span class="ruby-comment"># File module4/sorting.rb, line 34</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">randomized_quick_sort</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">r</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">l</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">r</span>
+
+  <span class="ruby-identifier">k</span> = <span class="ruby-identifier">rand</span>(<span class="ruby-identifier">l</span><span class="ruby-operator">..</span><span class="ruby-identifier">r</span>)
+  <span class="ruby-identifier">a</span>[<span class="ruby-identifier">l</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">k</span>] = <span class="ruby-identifier">a</span>[<span class="ruby-identifier">k</span>], <span class="ruby-identifier">a</span>[<span class="ruby-identifier">l</span>]
+  <span class="ruby-identifier">m</span> = <span class="ruby-identifier">partition3</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">r</span>)
+  <span class="ruby-identifier">m1</span>, <span class="ruby-identifier">m2</span> = <span class="ruby-identifier">m</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">m</span>[<span class="ruby-value">1</span>]
+  <span class="ruby-identifier">randomized_quick_sort</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">m1</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>);
+  <span class="ruby-identifier">randomized_quick_sort</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">m2</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">r</span>);
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.7.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

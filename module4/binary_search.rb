@@ -1,3 +1,9 @@
+# Performs binary search for an item in a sorted list.
+#
+# This function searches for an item in a sorted list using the binary search algorithm.
+# It returns the index of the item if found, otherwise it returns -1. The list must be sorted for
+# the binary search to work correctly.
+#
 def binary_search(item, list)
   low = 0
   high = list.length - 1

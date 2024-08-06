@@ -1,13 +1,21 @@
+# Represents a point with x and y coordinates.
+#
 Point = Struct.new(:x, :y)
 
+# Utility function to find the minimum of two values.
+#
 def min(a, b)
   a < b ? a : b
 end
 
+# Calculates the Euclidean distance between two points.
+#
 def euclidean_distance(p1, p2)
   Math.sqrt((p1.x - p2.x)**2 + (p1.y - p2.y)**2)
 end
 
+# Finds the minimum distance between any two points in a given set of points.
+#
 def minimum_distance(points)
   n = points.length
   return Float::INFINITY if n <= 1

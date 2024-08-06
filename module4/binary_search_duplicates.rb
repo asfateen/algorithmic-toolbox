@@ -1,3 +1,9 @@
+# Performs binary search for an item in a sorted list with possible duplicates.
+#
+# This function searches for the first occurrence of an item in a sorted list that may contain duplicate values.
+# It returns the index of the item if found, otherwise it returns -1. The search continues to the left even after
+# finding the item to ensure the first occurrence is located.
+#
 def binary_search_with_duplicates(item, list)
   low = 0
   high = list.length - 1

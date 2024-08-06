@@ -1,10 +1,12 @@
-DENOMINATIONS = [1, 5, 10]
+# Calculates the minimum number of coins needed to make change for a given amount.
+#
 def get_change(n)
+  denominations = [1, 5, 10]
   f = Array.new(n + 1, Float::INFINITY)
   f[0] = 0
 
   (1..n).each do |i|
-    DENOMINATIONS.each do |coin|
+    denominations.each do |coin|
       if coin <= i
         f[i] = [f[i], f[i - coin] + 1].min
       end

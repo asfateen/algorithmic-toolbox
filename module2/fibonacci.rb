@@ -1,3 +1,5 @@
+# This function computes the nth Fibonacci number using an iterative approach.
+#
 def calc_fib(n)
   f=[] * (n+1)
   f[0]=0

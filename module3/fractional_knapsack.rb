@@ -1,6 +1,8 @@
-#!/usr/bin/env ruby
-# by Andronik Ordian
-
+# Finds the index of the item with the highest value-to-weight ratio.
+#
+# This function identifies the item with the maximum value per unit of weight from the list of items.
+# It is used in the fractional knapsack problem to determine which item provides the most value for its weight.
+#
 def best_item(weights, values)
   bestItem = 0
   maxValuePerWeight = 0
@@ -14,6 +16,12 @@ def best_item(weights, values)
   end
   bestItem
 end
+
+# Computes the maximum value that can be obtained with a given knapsack capacity.
+#
+# This function solves the fractional knapsack problem by iteratively selecting the item with the highest
+# value-to-weight ratio and adding as much of it as possible to the knapsack until the capacity is full.
+#
 def get_optimal_value(capacity, weights, values)
   totalValue = 0
   weights.length.times {

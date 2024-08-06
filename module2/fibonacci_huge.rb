@@ -1,4 +1,7 @@
-
+# Calculates the Pisano period for a given modulus.
+#
+# The Pisano period is the length of the cycle of Fibonacci numbers modulo m.
+#
 def pisanoPeriod(m)
   previous, current = 0, 1
   (0...m * m).each do |i|
@@ -8,6 +11,10 @@ def pisanoPeriod(m)
 
 end
 
+# Calculates the nth Fibonacci number modulo m.
+#
+# This function uses the Pisano period to efficiently compute the nth Fibonacci number modulo m.
+#
 def fib_huge(n, m)
   pisano_period = pisanoPeriod(m)
   n = n % pisano_period
@@ -26,5 +33,4 @@ if __FILE__ == $0
   a, b = gets.split().map(&:to_i)
   puts "#{fib_huge(a, b)}"
 
-  puts "pisano of 10 is #{ pisanoPeriod(10)}"
 end

@@ -1,4 +1,5 @@
-
+# Computes the length of the longest common subsequence among three arrays using dynamic programming.
+#
 def lcs3(arr1, arr2, arr3)
   cell = Array.new(arr1.length + 1) { Array.new(arr2.length + 1) { Array.new(arr3.length + 1, 0)}}
 

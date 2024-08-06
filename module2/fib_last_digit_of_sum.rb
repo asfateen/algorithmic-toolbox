@@ -1,4 +1,7 @@
-
+# Calculates the Pisano period for a given modulus.
+#
+# The Pisano period is the length of the cycle of Fibonacci numbers modulo m.
+#
 def pisanoPeriod(m)
   previous, current = 0, 1
   (0...m * m).each do |i|
@@ -7,7 +10,10 @@ def pisanoPeriod(m)
   end
 
 end
-
+# Calculates the last digit of the sum of Fibonacci numbers up to the nth number.
+#
+# This function uses the Pisano period to efficiently compute the last digit of the sum.
+#
 def fib_last_digit_of_sum(n)
   n = n % pisanoPeriod(10)
   return n if n == 0 || n == 1

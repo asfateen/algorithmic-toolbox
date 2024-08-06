@@ -1,4 +1,7 @@
-
+# Calculates the last digit of the nth Fibonacci number.
+#
+# This function computes the last digit of the nth Fibonacci number using an iterative approach.
+#
 def pisanoPeriod(m)
   previous, current = 0, 1
   (m * m).times do |i|
@@ -8,6 +11,11 @@ def pisanoPeriod(m)
 
 end
 
+# Calculates the last digit of the nth Fibonacci number.
+#
+# This function computes the last digit of the nth Fibonacci number using the Pisano period
+# to optimize the computation.
+#
 def fib_last_digit(n)
   pisano10 = pisanoPeriod(10)
   n = n % pisano10

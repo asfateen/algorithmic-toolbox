@@ -1,4 +1,8 @@
-
+# Computes the edit distance between two strings.
+# The edit distance between two strings is the minimum number of single-character
+# edits (insertions, deletions, or substitutions) required to transform one string
+# into the other. This function uses dynamic programming to compute this distance.
+#
 def edit_distance(a, b)
   n = a.length
   m = b.length

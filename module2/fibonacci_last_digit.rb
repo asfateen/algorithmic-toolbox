@@ -1,3 +1,7 @@
+# Calculates the last digit of the nth Fibonacci number.
+#
+# This function computes the last digit of the nth Fibonacci number using an iterative approach.
+#
 def fib_last_digit(n)
   f=[] * (n+1)
   f[0]=0

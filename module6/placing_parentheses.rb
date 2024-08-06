@@ -1,6 +1,5 @@
-NUM_MAX = (2**(0.size * 8 - 2) - 1)
-NUM_MIN = -(2**(0.size * 8 - 2))
-
+# Evaluates the result of applying an operation to two numbers.
+#
 def evaluate(a, op, b)
   ops = {
     '+' => ->(x, y) { x + y },
@@ -10,6 +9,9 @@ def evaluate(a, op, b)
   ops[op].call(a, b)
 end
 
+# Computes the maximum value of an arithmetic expression given a list of numbers and operations.
+# Utilizes dynamic programming to find the optimal placement of parentheses.
+#
 def get_maximum_value(numbers, operations)
   n = numbers.length
   mmin = Array.new(n) { Array.new(n) }
@@ -19,7 +21,8 @@ def get_maximum_value(numbers, operations)
     mmin[i][i] = numbers[i]
     mmax[i][i] = numbers[i]
   end
-
+  
+  # Fills the DP table with minimum and maximum values for subexpressions
   def min_and_max(i, j, mmin, mmax, operations)
     min = Float::INFINITY
     max = -Float::INFINITY

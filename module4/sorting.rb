@@ -1,4 +1,9 @@
-
+# Partitions an array into three parts based on a pivot element.
+#
+# This method partitions the array `a` between indices `l` and `r` into
+# three segments: elements less than the pivot, elements equal to the pivot,
+# and elements greater than the pivot. The pivot element is chosen as `a[l]`.
+#
 def partition3(a, l, r)
   x = a[l]
   m1 = l
@@ -19,22 +24,13 @@ def partition3(a, l, r)
   [m1, m2]
 end
 
-
-
-
-def partition2(a, l, r)
-  x = a[l]
-  j = l
-  (l + 1..r).each do |i|
-    if a[i] <= x
-      j += 1
-      a[i], a[j] = a[j], a[i]
-    end
-  end
-  a[l], a[j] = a[j], a[l]
-  j
-end
-
+# Performs a randomized quicksort on the array.
+#
+# This method recursively sorts the array `a` between indices `l` and `r`
+# using the randomized quicksort algorithm. A random element is chosen as the
+# pivot, and the array is partitioned into three parts: elements less than
+# the pivot, elements equal to the pivot, and elements greater than the pivot.
+#
 def randomized_quick_sort(a, l, r)
   return nil if l >= r
 

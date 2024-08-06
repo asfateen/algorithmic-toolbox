@@ -1,3 +1,8 @@
+# Computes the length of the longest common subsequence (LCS) between two sequences.
+#
+# The longest common subsequence is the longest sequence that appears in both of the given sequences in the same order,
+# but not necessarily consecutively.
+#
 def longest_common_subsequence(arr1, arr2)
   cell = Array.new(arr1.length + 1) { Array.new(arr2.length + 1, 0) }
 

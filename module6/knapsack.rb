@@ -1,8 +1,12 @@
-
+# Utility function to find the maximum of two values.
+#
 def max(a, b)
   a > b ? a : b
 end
 
+#
+# Solves the knapsack without replacement problem
+#
 def optimal_weight(capacity, weights)
   values = Array.new(weights.length + 1) { Array.new(capacity + 1, 0) }
 

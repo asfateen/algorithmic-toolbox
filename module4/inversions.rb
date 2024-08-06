@@ -1,10 +1,13 @@
+# Copies elements from one array to another within a specified range.
+#
 def copy(a, b, l, r)
   while l < r
     b[l] = a[l]
     l += 1
   end
 end
-
+# Merges two sorted subarrays and counts the number of inversions.
+#
 def merge_and_count(a, b, left, mid, right)
   i = left
   j = mid
@@ -42,6 +45,8 @@ def merge_and_count(a, b, left, mid, right)
   number_of_inversions
 end
 
+# Computes the total number of inversions in an array using merge sort.
+#
 def get_number_of_inversions(a, b, left, right)
   number_of_inversions = 0
   return 0 if right - left <= 1
