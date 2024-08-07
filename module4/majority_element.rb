@@ -1,31 +1,32 @@
-# Finds the majority element in an array if it exists.
+# Determines the majority element in an array, if it exists, otherwise return nil
+# The majority element is the element that appears more than half the time in the array.
 #
-# A majority element is an element that appears more than `n/2` times in the array,
-# where `n` is the number of elements in the array.
-#
-def get_majority_element(nums)
-  candidate = find_candidate(nums)
-  count = count_occurrences(nums, candidate)
-  return candidate if count > nums.size / 2
-  nil
-end
-#
-# This algorithm identifies a potential majority element by keeping a count that is incremented
-# or decremented based on whether the current element matches the candidate.
-#
-def find_candidate(nums)
-  count = 0
-  candidate = nil
-  nums.each do |num|
-    if count == 0
-      candidate = num
-    end
-    count += (num == candidate ? 1 : -1)
+def get_majority_element(a)
+  candidate = get_majority_element_recursive(a, 0, a.length - 1)
+  if count_occurrences(a, candidate) > a.length / 2
+    candidate
+  else
+    nil
   end
-  candidate
 end
 
-# Counts the number of occurrences of a specific element in an array.
+# Recursively finds a candidate for the majority element using the divide-and-conquer approach.
+#
+def get_majority_element_recursive(nums, left, right)
+  return nums[left] if left == right
+
+  mid = left + (right - left) / 2
+  leftMajority = get_majority_element_recursive(nums, left, mid)
+  rightMajority = get_majority_element_recursive(nums, mid + 1, right)
+  return leftMajority if leftMajority == rightMajority
+
+  leftCount = count_occurrences(nums[left..right], leftMajority)
+  rightCount = count_occurrences(nums[left..right], rightMajority)
+  
+  leftCount > rightCount ? leftMajority : rightMajority
+end
+
+# Counts the occurrences of a target element in an array.
 #
 def count_occurrences(nums, target)
   nums.count { |num| num == target }

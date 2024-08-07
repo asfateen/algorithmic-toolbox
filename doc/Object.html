@@ -76,6 +76,7 @@
     <li ><a href="#method-i-binary_search">#binary_search</a>
     <li ><a href="#method-i-binary_search_with_duplicates">#binary_search_with_duplicates</a>
     <li ><a href="#method-i-calc_fib">#calc_fib</a>
+    <li ><a href="#method-i-can_partition">#can_partition</a>
     <li ><a href="#method-i-change">#change</a>
     <li ><a href="#method-i-copy">#copy</a>
     <li ><a href="#method-i-count_occurrences">#count_occurrences</a>
@@ -88,10 +89,10 @@
     <li ><a href="#method-i-fib_last_digit_of_sum">#fib_last_digit_of_sum</a>
     <li ><a href="#method-i-fib_partial_sum">#fib_partial_sum</a>
     <li ><a href="#method-i-fib_sum_of_squares">#fib_sum_of_squares</a>
-    <li ><a href="#method-i-find_candidate">#find_candidate</a>
     <li ><a href="#method-i-gcd">#gcd</a>
     <li ><a href="#method-i-get_change">#get_change</a>
     <li ><a href="#method-i-get_majority_element">#get_majority_element</a>
+    <li ><a href="#method-i-get_majority_element_recursive">#get_majority_element_recursive</a>
     <li ><a href="#method-i-get_maximum_value">#get_maximum_value</a>
     <li ><a href="#method-i-get_number_of_inversions">#get_number_of_inversions</a>
     <li ><a href="#method-i-get_optimal_value">#get_optimal_value</a>
@@ -112,8 +113,8 @@
     <li ><a href="#method-i-optimal_points">#optimal_points</a>
     <li ><a href="#method-i-optimal_summands">#optimal_summands</a>
     <li ><a href="#method-i-optimal_weight">#optimal_weight</a>
-    <li ><a href="#method-i-optimal_weight_items">#optimal_weight_items</a>
     <li ><a href="#method-i-partition3">#partition3</a>
+    <li ><a href="#method-i-partition3subsets">#partition3subsets</a>
     <li ><a href="#method-i-pisanoPeriod">#pisanoPeriod</a>
     <li ><a href="#method-i-randomized_quick_sort">#randomized_quick_sort</a>
   </ul>
@@ -297,6 +298,39 @@
 
       </div>
 
+      <div id="method-i-can_partition" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">can_partition</span><span
+              class="method-args">(nums, visited, start, k, cur_sum, subset_sum)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>This function uses recursion and backtracking to try and form ‘k’ subsets, each with a sum of ‘subset_sum’. It keeps track of the current sum of the subset being formed and marks elements as visited to avoid reuse.</p>
+
+          <div class="method-source-code" id="can_partition-source">
+            <pre><span class="ruby-comment"># File module6/pirate_partition3.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">can_partition</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">visited</span>, <span class="ruby-identifier">start</span>, <span class="ruby-identifier">k</span>, <span class="ruby-identifier">cur_sum</span>, <span class="ruby-identifier">subset_sum</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">k</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">can_partition</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">visited</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">k</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">subset_sum</span>) <span class="ruby-keyword">if</span> <span class="ruby-identifier">cur_sum</span> <span class="ruby-operator">==</span>  <span class="ruby-identifier">subset_sum</span>
+
+  (<span class="ruby-identifier">start</span><span class="ruby-operator">...</span><span class="ruby-identifier">nums</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">next</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">visited</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">||</span> <span class="ruby-identifier">cur_sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">nums</span>[<span class="ruby-identifier">i</span>] <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">subset_sum</span>
+
+    <span class="ruby-identifier">visited</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-keyword">true</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">can_partition</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">visited</span>, <span class="ruby-identifier">i</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">k</span>, <span class="ruby-identifier">cur_sum</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">nums</span>[<span class="ruby-identifier">i</span>], <span class="ruby-identifier">subset_sum</span>)
+    <span class="ruby-identifier">visited</span>[<span class="ruby-identifier">i</span>] = <span class="ruby-keyword">false</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">false</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
       <div id="method-i-change" class="method-detail ">
         <div class="method-header">
           <div class="method-heading">
@@ -370,10 +404,10 @@
         </div>
 
         <div class="method-description">
-          <p>Counts the number of occurrences of a specific element in an array.</p>
+          <p>Counts the occurrences of a target element in an array.</p>
 
           <div class="method-source-code" id="count_occurrences-source">
-            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 30</span>
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 31</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">count_occurrences</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">target</span>)
   <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">count</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span> <span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">target</span> }
 <span class="ruby-keyword">end</span></pre>
@@ -703,37 +737,6 @@
 
       </div>
 
-      <div id="method-i-find_candidate" class="method-detail ">
-        <div class="method-header">
-          <div class="method-heading">
-            <span class="method-name">find_candidate</span><span
-              class="method-args">(nums)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-        </div>
-
-        <div class="method-description">
-          <p>This algorithm identifies a potential majority element by keeping a count that is incremented or decremented based on whether the current element matches the candidate.</p>
-
-          <div class="method-source-code" id="find_candidate-source">
-            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 16</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">find_candidate</span>(<span class="ruby-identifier">nums</span>)
-  <span class="ruby-identifier">count</span> = <span class="ruby-value">0</span>
-  <span class="ruby-identifier">candidate</span> = <span class="ruby-keyword">nil</span>
-  <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">num</span><span class="ruby-operator">|</span>
-    <span class="ruby-keyword">if</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
-      <span class="ruby-identifier">candidate</span> = <span class="ruby-identifier">num</span>
-    <span class="ruby-keyword">end</span>
-    <span class="ruby-identifier">count</span> <span class="ruby-operator">+=</span> (<span class="ruby-identifier">num</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">candidate</span> <span class="ruby-operator">?</span> <span class="ruby-value">1</span> <span class="ruby-operator">:</span> <span class="ruby-value">-1</span>)
-  <span class="ruby-keyword">end</span>
-  <span class="ruby-identifier">candidate</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-        </div>
-
-
-      </div>
-
       <div id="method-i-gcd" class="method-detail ">
         <div class="method-header">
           <div class="method-heading">
@@ -797,23 +800,56 @@
         <div class="method-header">
           <div class="method-heading">
             <span class="method-name">get_majority_element</span><span
-              class="method-args">(nums)</span>
+              class="method-args">(a)</span>
             <span class="method-click-advice">click to toggle source</span>
           </div>
         </div>
 
         <div class="method-description">
-          <p>Finds the majority element in an array if it exists.</p>
-
-<p>A majority element is an element that appears more than ‘n/2` times in the array, where `n` is the number of elements in the array.</p>
+          <p>Determines the majority element in an array, if it exists, otherwise return nil The majority element is the element that appears more than half the time in the array.</p>
 
           <div class="method-source-code" id="get_majority_element-source">
-            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 6</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_majority_element</span>(<span class="ruby-identifier">nums</span>)
-  <span class="ruby-identifier">candidate</span> = <span class="ruby-identifier">find_candidate</span>(<span class="ruby-identifier">nums</span>)
-  <span class="ruby-identifier">count</span> = <span class="ruby-identifier">count_occurrences</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">candidate</span>)
-  <span class="ruby-keyword">return</span> <span class="ruby-identifier">candidate</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">count</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">size</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
-  <span class="ruby-keyword">nil</span>
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_majority_element</span>(<span class="ruby-identifier">a</span>)
+  <span class="ruby-identifier">candidate</span> = <span class="ruby-identifier">get_majority_element_recursive</span>(<span class="ruby-identifier">a</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">a</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">count_occurrences</span>(<span class="ruby-identifier">a</span>, <span class="ruby-identifier">candidate</span>) <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">a</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+    <span class="ruby-identifier">candidate</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-get_majority_element_recursive" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">get_majority_element_recursive</span><span
+              class="method-args">(nums, left, right)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Recursively finds a candidate for the majority element using the divide-and-conquer approach.</p>
+
+          <div class="method-source-code" id="get_majority_element_recursive-source">
+            <pre><span class="ruby-comment"># File module4/majority_element.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">get_majority_element_recursive</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">right</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">nums</span>[<span class="ruby-identifier">left</span>] <span class="ruby-keyword">if</span> <span class="ruby-identifier">left</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">right</span>
+
+  <span class="ruby-identifier">mid</span> = <span class="ruby-identifier">left</span> <span class="ruby-operator">+</span> (<span class="ruby-identifier">right</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">left</span>) <span class="ruby-operator">/</span> <span class="ruby-value">2</span>
+  <span class="ruby-identifier">leftMajority</span> = <span class="ruby-identifier">get_majority_element_recursive</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">left</span>, <span class="ruby-identifier">mid</span>)
+  <span class="ruby-identifier">rightMajority</span> = <span class="ruby-identifier">get_majority_element_recursive</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">mid</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-identifier">right</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">leftMajority</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">leftMajority</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">rightMajority</span>
+
+  <span class="ruby-identifier">leftCount</span> = <span class="ruby-identifier">count_occurrences</span>(<span class="ruby-identifier">nums</span>[<span class="ruby-identifier">left</span><span class="ruby-operator">..</span><span class="ruby-identifier">right</span>], <span class="ruby-identifier">leftMajority</span>)
+  <span class="ruby-identifier">rightCount</span> = <span class="ruby-identifier">count_occurrences</span>(<span class="ruby-identifier">nums</span>[<span class="ruby-identifier">left</span><span class="ruby-operator">..</span><span class="ruby-identifier">right</span>], <span class="ruby-identifier">rightMajority</span>)
+  
+  <span class="ruby-identifier">leftCount</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">rightCount</span> <span class="ruby-operator">?</span> <span class="ruby-identifier">leftMajority</span> <span class="ruby-operator">:</span> <span class="ruby-identifier">rightMajority</span>
 <span class="ruby-keyword">end</span></pre>
           </div>
         </div>
@@ -1526,49 +1562,6 @@
 
       </div>
 
-      <div id="method-i-optimal_weight_items" class="method-detail ">
-        <div class="method-header">
-          <div class="method-heading">
-            <span class="method-name">optimal_weight_items</span><span
-              class="method-args">(capacity, weights)</span>
-            <span class="method-click-advice">click to toggle source</span>
-          </div>
-        </div>
-
-        <div class="method-description">
-          
-
-          <div class="method-source-code" id="optimal_weight_items-source">
-            <pre><span class="ruby-comment"># File module6/pirate_partition3.rb, line 1</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">optimal_weight_items</span>(<span class="ruby-identifier">capacity</span>, <span class="ruby-identifier">weights</span>)
-  <span class="ruby-identifier">values</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>) { <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">capacity</span> <span class="ruby-operator">+</span> <span class="ruby-value">1</span>, <span class="ruby-value">0</span>) }
-  
-  (<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
-    (<span class="ruby-value">0</span><span class="ruby-operator">..</span><span class="ruby-identifier">capacity</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">w</span><span class="ruby-operator">|</span>
-      <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span>]
-      <span class="ruby-keyword">if</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>] <span class="ruby-operator">&lt;=</span> <span class="ruby-identifier">w</span>
-        <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] = [<span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>], <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]] <span class="ruby-operator">+</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]].<span class="ruby-identifier">max</span>
-      <span class="ruby-keyword">end</span>
-    <span class="ruby-keyword">end</span>
-  <span class="ruby-keyword">end</span>
-
-  <span class="ruby-identifier">items</span> = []
-  <span class="ruby-identifier">w</span> = <span class="ruby-identifier">capacity</span>
-  (<span class="ruby-identifier">weights</span>.<span class="ruby-identifier">length</span>).<span class="ruby-identifier">downto</span>(<span class="ruby-value">1</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">i</span><span class="ruby-operator">|</span>
-    <span class="ruby-keyword">if</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span>][<span class="ruby-identifier">w</span>] <span class="ruby-operator">!=</span> <span class="ruby-identifier">values</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>][<span class="ruby-identifier">w</span>]
-      <span class="ruby-identifier">items</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
-      <span class="ruby-identifier">w</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">weights</span>[<span class="ruby-identifier">i</span> <span class="ruby-operator">-</span> <span class="ruby-value">1</span>]
-    <span class="ruby-keyword">end</span>
-  <span class="ruby-keyword">end</span>
-
-  <span class="ruby-keyword">return</span> <span class="ruby-identifier">items</span>
-<span class="ruby-keyword">end</span></pre>
-          </div>
-        </div>
-
-
-      </div>
-
       <div id="method-i-partition3" class="method-detail ">
         <div class="method-header">
           <div class="method-heading">
@@ -1603,6 +1596,35 @@
     <span class="ruby-keyword">end</span>
   <span class="ruby-keyword">end</span>
   [<span class="ruby-identifier">m1</span>, <span class="ruby-identifier">m2</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div id="method-i-partition3subsets" class="method-detail ">
+        <div class="method-header">
+          <div class="method-heading">
+            <span class="method-name">partition3subsets</span><span
+              class="method-args">(nums)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+        </div>
+
+        <div class="method-description">
+          <p>Determines if an array can be partitioned into 3 subsets with equal sum.</p>
+
+          <div class="method-source-code" id="partition3subsets-source">
+            <pre><span class="ruby-comment"># File module6/pirate_partition3.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier ruby-title">partition3subsets</span>(<span class="ruby-identifier">nums</span>)
+  <span class="ruby-identifier">total</span> = <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">sum</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">false</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">total</span> <span class="ruby-operator">%</span> <span class="ruby-value">3</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0</span>
+
+  <span class="ruby-identifier">nums</span>.<span class="ruby-identifier">sort!</span>
+  <span class="ruby-identifier">subset_sum</span> = <span class="ruby-identifier">total</span> <span class="ruby-operator">/</span> <span class="ruby-value">3</span>
+  <span class="ruby-identifier">visited</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">nums</span>.<span class="ruby-identifier">length</span>, <span class="ruby-keyword">false</span>)
+  <span class="ruby-identifier">can_partition</span>(<span class="ruby-identifier">nums</span>, <span class="ruby-identifier">visited</span>, <span class="ruby-value">0</span>, <span class="ruby-value">3</span>, <span class="ruby-value">0</span>, <span class="ruby-identifier">subset_sum</span>)
 <span class="ruby-keyword">end</span></pre>
           </div>
         </div>
